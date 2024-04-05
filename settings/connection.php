@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root"; 
-$password = "ayobalima"; 
+$password = "'1@+/20HvfJfm"; 
 $database = "sportifydb"; 
 
 $conn = new mysqli($servername, $username, $password, $database);
