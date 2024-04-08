@@ -1,8 +1,11 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $servername = "localhost";
 $username = "root"; 
-$password = "'1@+/20HvfJfm"; 
-$database = "sportifydb"; 
+$password = "1@+/20HvfJfm"; 
+$database = "sporitfydb"; 
 
 $conn = new mysqli($servername, $username, $password, $database);
 
