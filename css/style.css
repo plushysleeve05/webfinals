@@ -83,47 +83,88 @@ body {
 
 
 /* new nav bar */
-nav{
+nav {
   width: 100vw;
-  position: absolute;
-  top: 40px;
+  position: fixed; /* Change from 'absolute' to 'fixed' */
+  top: 0;
   left: 0;
   padding: 30px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  size:30px;
-  background-color: #000000;
-  height: 10px;
+  background-color: black;
+  z-index: 1000; 
+  height: 100px;
 }
 
 /* new logo */
-nav .logo{
+nav .logo {
   width: 80px;
 }
 
 /* navigation menu */
-nav ul li{
+nav ul {
   list-style: none;
-  display: inline-block;
-  margin: 10 10 10 40px;
-  padding:15px;
+  display: flex; 
+  margin-right: 40px;
 }
 
-/* navigation menu format */
-nav ul li a{
+nav ul li {
+  margin-left: 4px;
+}
+
+nav ul li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 15px;
+  color: #ededed; 
+  font-size: 23px;
+  padding: 10px; 
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: red;
 }
-
 
 .text-primary{
   color: red;
+}
+
+/* CSS all events button */
+.button-24 {
+  background: #ee1e46;
+  border: 1px solid #ee1e46;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 15px 13px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  /* margin-left: 382px; */
+  float: right;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ee1e46;
+}
+
+.button-24:active {
+  opacity: .5;
 }
 
 /* main content */
@@ -153,6 +194,7 @@ nav ul li a:hover{
   left: 0;
   width: 100vw;  
   z-index: -1;
+  object-fit: cover;
   /* height: 100%; */
 }
 

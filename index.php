@@ -34,19 +34,9 @@
 
   <link rel="stylesheet" href="fonts2/icomoon/style.css">
 
-  <!-- <link rel="stylesheet" href="css2/bootstrap/bootstrap.css"> -->
-  <link rel="stylesheet" href="css2/jquery-ui.css">
-  <link rel="stylesheet" href="css2/owl.carousel.min.css">
-  <link rel="stylesheet" href="css2/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css2/owl.theme.default.min.css">
+  
 
-  <link rel="stylesheet" href="css2/jquery.fancybox.min.css">
-
-  <link rel="stylesheet" href="css2/bootstrap-datepicker.css">
-
-  <link rel="stylesheet" href="fonts2/flaticon/font/flaticon.css">
-
-  <link rel="stylesheet" href="css2/aos.css">
+ 
 
   <link rel="stylesheet" href="css2/style.css">
 </head>
@@ -65,12 +55,12 @@
         <nav class="nav1">
           <a class="logo" href="index.html">
             <span>
-              SportifyHub
+              <img src="images/lg.png" alt="">
             </span>
           </a>
 
           <ul class="">
-            <li><a href="index.html">Add Events</a></li>
+            <li><a href="view/add_and_view_events.php">Add Events</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Sign Up with your school</a></li>
           </ul>
@@ -78,33 +68,26 @@
 
         <div class="content">
           <h1>SportifyHub</h1>
-          <a href="#">View Events</a>
-
+          <a href="#who_section"  onclick="scrollToSection(event)">View Events</a>
         </div>
     <!-- end header section -->
-
-    <!-- slider section -->
-   
   </div>
-  <br><br><br>
-
-
   <!-- who section -->
 
-  <section class="who_section ">
+  <div id="who_section"></div>
+  <br><br>
+  <section class="who_section">
     <div class="container">
-      
       <div class="row">
-        <div class="col-12 title-section">
+        <div class="col-12 title-section" style="display: inline;">
           <h2 class="heading">Upcoming Events</h2>
+          <button class="button-24" role="button"><a href="view/add_and_view_events.php">View All</a></button>
         </div>
-
         <?php
           include_once'settings/connection.php';
           global $conn;
           $sql = "SELECT name, date, time, location FROM events LIMIT 4";
           $result = mysqli_query($conn, $sql);
-
           if (mysqli_num_rows($result) > 0) {
               while ($row = mysqli_fetch_assoc($result)) {
                   // Extract event data
@@ -121,7 +104,7 @@
                               <div class="widget-vs">
                                   <div class="d-flex align-items-center justify-content-around justify-content-between w-100">        
                                       <div class="team-2 text-center">
-                                          <img src="images2/sports.png" alt="Image">
+                                          <img src="images22/sports.png" alt="Image">
                                           <br><br>
                                           <h3 style="color: red !important;">'.$eventName.'</h3>
                                       </div>
@@ -144,34 +127,114 @@
               echo "No events found.";
           }
         ?>
-
-        <div class="col-lg-6 mb-4">
-          <div class="bg-light p-4 rounded">
-            <div class="widget-body">
-                <div class="widget-vs">
-                  <div class="d-flex align-items-center justify-content-around justify-content-between w-100">        
-                    <div class="team-2 text-center">
-                      <img src="images2/sports.png" alt="Image">
-                      <br><br>
-                      <h3 style="color: red !important;">Event name</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center widget-vs-contents mb-4">
-                <h4>World Cup League</h4>
-                <p class="mb-5">
-                  <span class="d-block">date from database</span>
-                  <span class="d-block">time  from database</span>
-                  <strong class="text-primary">location from database</strong>
-                </p>
-              </div>
-          </div>
-        </div>
     </div>
   </section>
 
   <!-- end who section -->
+
+  <!-- another who section -->
+  <section class="who_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 title-section" style="display: inline;">
+          <h2 class="heading">Current Teams</h2>
+          <br><br>
+          <div class="owl-4-slider owl-carousel">
+          <div class="item">
+            <div class="video-media">
+              <img src="images2/img_1.jpg" alt="Image" class="img-fluid">
+              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+                <span class="icon mr-3">
+                  <span class="icon-play"></span>
+                </span>
+                <div class="caption">
+                  <span class="meta">#10 / Forward</span>
+                  <h3 class="m-0">Phillip Hobbs</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="video-media">
+              <img src="images2/img_2.jpg" alt="Image" class="img-fluid">
+              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+                <span class="icon mr-3">
+                  <span class="icon-play"></span>
+                </span>
+                <div class="caption">
+                  <span class="meta">#7 / Forward</span>
+                  <h3 class="m-0">Garry Norris</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="video-media">
+              <img src="images2/img_3.jpg" alt="Image" class="img-fluid">
+              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+                <span class="icon mr-3">
+                  <span class="icon-play"></span>
+                </span>
+                <div class="caption">
+                  <span class="meta">#4 / Forward</span>
+                  <h3 class="m-0">Romolu Harper</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="video-media">
+              <img src="images2/img_1.jpg" alt="Image" class="img-fluid">
+              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+                <span class="icon mr-3">
+                  <span class="icon-play"></span>
+                </span>
+                <div class="caption">
+                  <span class="meta">#4 / Forward</span>
+                  <h3 class="m-0">Phillip Hobbs</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="video-media">
+              <img src="images2/img_2.jpg" alt="Image" class="img-fluid">
+              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+                <span class="icon mr-3">
+                  <span class="icon-play"></span>
+                </span>
+                <div class="caption">
+                  <span class="meta">#1 / GoalKeeper</span>
+                  <h3 class="m-0">Garry Norris</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="video-media">
+              <img src="images2/img_3.jpg" alt="Image" class="img-fluid">
+              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+                <span class="icon mr-3">
+                  <span class="icon-play"></span>
+                </span>
+                <div class="caption">
+                  <span class="meta">#8 / Forward</span>
+                  <h3 class="m-0">Romolu Harper</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+          <button class="button-24" role="button"><a href="">Add your team for an Event</a></button>
+        </div>
+    </div>
+  </section>
+
 
 
   <!-- work section -->
@@ -245,11 +308,7 @@
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
-    <p>
-      &copy; 2020 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-      Distrubuted By <a href="https://themewagon.com">ThemeWagon</a>
-    </p>
+    
   </section>
   <!-- footer section -->
 
@@ -299,6 +358,20 @@
  
  
    <script src="js2/main.js"></script>
+
+   <!-- scrolling javascript -->
+   <script>
+      function scrollToSection(event) {
+          event.preventDefault();
+          const navbarHeight = document.querySelector('nav').offsetHeight; // Get the height of the navbar
+          const sectionTop = document.querySelector('#who_section').offsetTop - navbarHeight; // Calculate the top position of the section
+
+          window.scrollTo({
+              top: sectionTop,
+              behavior: 'smooth'
+          });
+      }
+    </script>
 
 </body>
 

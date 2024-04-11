@@ -4,8 +4,8 @@ ini_set('display_errors', 1);
 
 $servername = "localhost";
 $username = "root"; 
-$password = "1@+/20HvfJfm"; 
-$database = "sporitfydb"; 
+$password = "ayobalima"; 
+$database = "sportifydb"; 
 
 $conn = new mysqli($servername, $username, $password, $database);
 
