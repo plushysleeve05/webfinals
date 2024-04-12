@@ -639,7 +639,7 @@ a:focus {
 }
 
 .target_section {
-  background-image: url(../images/target-bg.jpg);
+  background-image: url(../images/mainwall.jpg);
   background-size: cover;
   color: #ffffff;
   text-align: center;
@@ -820,7 +820,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #232323;
+  background-color: #000000;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;

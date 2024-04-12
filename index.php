@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -29,14 +32,8 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
 
-  <!-- scorestyle sheet -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="fonts2/icomoon/style.css">
-
-  
-
- 
 
   <link rel="stylesheet" href="css2/style.css">
 </head>
@@ -61,8 +58,8 @@
 
           <ul class="">
             <li><a href="view/add_and_view_events.php">Add Events</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Sign Up with your school</a></li>
+            <li><a href="view/team_registration.php">Register Team and Players</a></li>
+            <li><a href="view/signup.html">Sign Up with your school</a></li>
           </ul>
         </nav>
 
@@ -104,7 +101,7 @@
                               <div class="widget-vs">
                                   <div class="d-flex align-items-center justify-content-around justify-content-between w-100">        
                                       <div class="team-2 text-center">
-                                          <img src="images22/sports.png" alt="Image">
+                                          <img src="images2/sports.png" alt="Image">
                                           <br><br>
                                           <h3 style="color: red !important;">'.$eventName.'</h3>
                                       </div>
@@ -138,96 +135,10 @@
       <div class="row">
         <div class="col-12 title-section" style="display: inline;">
           <h2 class="heading">Current Teams</h2>
-          <br><br>
+          <br>
           <div class="owl-4-slider owl-carousel">
-          <div class="item">
-            <div class="video-media">
-              <img src="images2/img_1.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
-                <span class="icon mr-3">
-                  <span class="icon-play"></span>
-                </span>
-                <div class="caption">
-                  <span class="meta">#10 / Forward</span>
-                  <h3 class="m-0">Phillip Hobbs</h3>
-                </div>
-              </a>
-            </div>
+            
           </div>
-          <div class="item">
-            <div class="video-media">
-              <img src="images2/img_2.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
-                <span class="icon mr-3">
-                  <span class="icon-play"></span>
-                </span>
-                <div class="caption">
-                  <span class="meta">#7 / Forward</span>
-                  <h3 class="m-0">Garry Norris</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video-media">
-              <img src="images2/img_3.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
-                <span class="icon mr-3">
-                  <span class="icon-play"></span>
-                </span>
-                <div class="caption">
-                  <span class="meta">#4 / Forward</span>
-                  <h3 class="m-0">Romolu Harper</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="video-media">
-              <img src="images2/img_1.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
-                <span class="icon mr-3">
-                  <span class="icon-play"></span>
-                </span>
-                <div class="caption">
-                  <span class="meta">#4 / Forward</span>
-                  <h3 class="m-0">Phillip Hobbs</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video-media">
-              <img src="images2/img_2.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
-                <span class="icon mr-3">
-                  <span class="icon-play"></span>
-                </span>
-                <div class="caption">
-                  <span class="meta">#1 / GoalKeeper</span>
-                  <h3 class="m-0">Garry Norris</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video-media">
-              <img src="images2/img_3.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
-                <span class="icon mr-3">
-                  <span class="icon-play"></span>
-                </span>
-                <div class="caption">
-                  <span class="meta">#8 / Forward</span>
-                  <h3 class="m-0">Romolu Harper</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
 
           <button class="button-24" role="button"><a href="">Add your team for an Event</a></button>
@@ -235,79 +146,29 @@
     </div>
   </section>
 
-
-
-  <!-- work section -->
-  <section class="work_section layout_padding">
-    <!-- placeholder for next homepage attribute -->
-  </section>
-
-  <!-- end work section -->
-
   
-  <!-- target section -->
-  <section class="target_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="detail-box">
-            <h2>
-              1000+
-            </h2>
-            <h5>
-              Years of Business
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="detail-box">
-            <h2>
-              20000+
-            </h2>
-            <h5>
-              Projects Delivered
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="detail-box">
-            <h2>
-              10000+
-            </h2>
-            <h5>
-              Satisfied Customers
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="detail-box">
-            <h2>
-              1500+
-            </h2>
-            <h5>
-              Cups of Coffee
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- end target section -->
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <div class="row">
-        
-      </div>
-    </div>
-  </section>
+
 
   <!-- end info_section -->
 
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
+    <!-- give me a suitable footer -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="index.html">
+            <img src="images/lg.png" alt="">
+            <!-- put an all rights reserved here -->
+            <p>Copyright &copy; 2024</p>
+          </a>
+          </a>
+        </div>
+      </div>
+    </div>
     
   </section>
   <!-- footer section -->
@@ -341,6 +202,7 @@
   <!-- score stuff -->
    <!-- .site-wrap -->
 
+   
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="js2/jquery-migrate-3.0.1.min.js"></script>
    <script src="js2/jquery-ui.js"></script>
@@ -372,6 +234,46 @@
           });
       }
     </script>
+    <script>
+  $(document).ready(function() {
+    // Function to fetch team details via AJAX
+    function fetchTeams() {
+      $.ajax({
+        url: 'actions/get-teams.php', // URL of your get-teams.php file
+        type: 'GET',
+        success: function(response) {
+          // Append the retrieved HTML response to the .owl-4-slider element
+          $('.owl-4-slider').html(response);
+          // Initialize the Owl Carousel
+          $(".owl-4-slider").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 4
+              }
+            }
+          });
+        },
+        error: function(xhr, status, error) {
+          // Handle error if AJAX request fails
+          console.error(xhr.responseText);
+        }
+      });
+    }
+
+    // Call the fetchTeams function when the document is ready
+    fetchTeams();
+  });
+</script>
 
 </body>
 
