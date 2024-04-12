@@ -58,8 +58,8 @@
 
           <ul class="">
             <li><a href="view/add_and_view_events.php">Add Events</a></li>
-            <li><a href="view/team_registration.php">Register Team and Players</a></li>
-            <li><a href="view/signup.html">Sign Up with your school</a></li>
+            <li><a href="view/team_registration.php">Register Your Team</a></li>
+            <li><a href="view/signup.php">Sign Up with your school</a></li>
           </ul>
         </nav>
 
