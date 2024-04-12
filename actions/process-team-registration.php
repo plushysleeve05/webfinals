@@ -12,19 +12,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt = mysqli_prepare($conn, $sql);
             mysqli_stmt_bind_param($stmt, "si", $teamName, $eventId);
             if (mysqli_stmt_execute($stmt)) {
-                echo json_encode(array('success' => 'Team registered successfully'));
+                http_response_code(200); // Set HTTP status code to 200 OK
+                echo json_encode(array('success' => true, 'message' => 'Team registered successfully'));
             } else {
-                echo json_encode(array('error' => 'Failed to register team: ' . mysqli_error($conn)));
+                http_response_code(400); // Set HTTP status code to 400 Bad Request
+                echo json_encode(array('success' => false, 'error' => 'Failed to register team: ' . mysqli_error($conn)));
             }
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
         } else {
-            echo json_encode(array('error' => 'Invalid team name or event ID'));
+            http_response_code(400); // Set HTTP status code to 400 Bad Request
+            echo json_encode(array('success' => false, 'error' => 'Invalid team name or event ID'));
         }
     } else {
-        echo json_encode(array('error' => 'No JSON data received'));
+        http_response_code(400); // Set HTTP status code to 400 Bad Request
+        echo json_encode(array('success' => false, 'error' => 'No JSON data received'));
     }
 } else {
-    echo json_encode(array('error' => 'Invalid request method'));
+    http_response_code(405); // Set HTTP status code to 405 Method Not Allowed
+    echo json_encode(array('success' => false, 'error' => 'Invalid request method'));
 }
 ?>
